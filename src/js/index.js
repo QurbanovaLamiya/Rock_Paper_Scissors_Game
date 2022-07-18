@@ -13,14 +13,14 @@ let computerScore = 0;
 const gameArr = ["rock", "paper", "scissors"];
 
 function startGame() {
-  modal.classList.toggle("reveal");
+  modal.classList.toggle("reveal");    
 }
 
 modalButton.addEventListener("click", () => {
   modal.classList.toggle("reveal");
   modal.style.pointerEvents = "none";
   game.classList.toggle("reveal");
-});
+}); 
 
 buttons.forEach((item) => {
   item.addEventListener("click", (e) => {
