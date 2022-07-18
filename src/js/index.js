@@ -26,6 +26,7 @@ buttons.forEach((item) => {
   item.addEventListener("click", (e) => {
     const playerChoise = e.target.getAttribute("data-value");
     const computerChoise = gameArr[Math.floor(Math.random() * gameArr.length)];
+
     playerImg.src = "./src/img/rock.png";
     computerImg.src = "./src/img/rock.png";
 
@@ -53,8 +54,6 @@ function gameResult(playerValue, computerValue) {
     playerScore++;
     pScore.innerHTML = playerScore;
     scoreResult.innerHTML = "Player Winn!!!";
-
-    pScore.innerHTML = playerScore;
   } else if (playerValue === computerValue) {
     scoreResult.innerHTML = "Draw-Draw";
   } else {
